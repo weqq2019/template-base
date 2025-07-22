@@ -49,11 +49,13 @@ template-base/                          # Claude Code智能项目模板系统根
 │       └── Claude Code智能项目创建完整流程.md # 详细流程说明
 │
 ├── 🛠️ 开发规范
-│   └── project-rules-cn/                # Git提交规范
-│       ├── 提交规范.mdc                 # Git提交规范
-│       ├── 快速提交.mdc                 # 快速提交流程
-│       ├── 一键推送.mdc                 # 推送工作流
-│       └── 更新变更日志.mdc             # 变更日志维护
+│   ├── project-rules/                   # Git工作流规范(英文版)
+│   │   ├── commit.mdc                   # Git提交规范
+│   │   ├── commit-fast.mdc              # 快速提交流程
+│   │   ├── push.mdc                     # 推送工作流
+│   │   ├── changelog.mdc                # 变更日志维护
+│   │   └── README.md                    # 规范说明文档
+│   └── project-rules-cn-backup/         # 中文版备份(已弃用)
 │
 └── ⚙️ 配置文件
     ├── .gitignore                       # Git忽略规则
@@ -215,6 +217,7 @@ claude
 - 🔧 **脚本路径修复** - 更新所有脚本中的文件路径引用
 - 📋 **文档体系完善** - 建立完整的template-base项目文档
 - 🚀 **代码推送** - v3.0版本已成功推送至GitHub仓库
+- 🌍 **国际化重构** - 从中文版project-rules-cn升级为标准英文版project-rules
 
 #### 📋 **下一步计划**
 - 🧪 **系统测试** - 完整流程端到端测试验证

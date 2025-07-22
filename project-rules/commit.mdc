@@ -1,0 +1,67 @@
+# Commit Standards
+
+Create well-formatted commits using conventional commit message format with descriptive emojis.
+
+## Features:
+- Default pre-commit checks (linting, builds, documentation generation)
+- Auto-stage files if no staged files exist
+- Uses conventional commit format with descriptive emojis
+- Suggests splitting commits for different concerns
+
+## Usage:
+- `/commit` - Standard commit with pre-commit checks
+- `/commit --no-verify` - Skip pre-commit checks
+
+## Commit Types:
+- ✨ feat: New feature
+- 🐛 fix: Bug fixes
+- 📝 docs: Documentation changes
+- ♻️ refactor: Code refactoring, no functionality change
+- 🎨 style: Code formatting, missing semicolons, etc.
+- ⚡️ perf: Performance improvements
+- ✅ test: Adding or fixing tests
+- 🧑‍💻 chore: Tools, configuration, maintenance
+- 🚧 wip: Work in progress
+- 🔥 remove: Remove code or files
+- 🚑 hotfix: Emergency fixes
+- 🔒 security: Security improvements
+
+## Execution Flow:
+1. Check staged changes (`git status`)
+2. If no staged changes, review and stage appropriate files
+3. Run pre-commit checks (unless --no-verify)
+4. Analyze changes to determine commit type
+5. Generate descriptive commit message
+6. Include scope if applicable: `type(scope): description`
+7. Include Issue number if exists: `type(scope): description #issue-number`
+8. Add body for complex changes explaining why
+9. Execute commit
+10. Exclude Claude co-author information
+
+## Commit Message Format:
+```
+<emoji> <type>(<scope>): <description> #issue-number
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Examples:
+- `✨ feat(auth): add user authentication system #123`
+- `🐛 fix: resolve memory leak in data processing #456`
+- `📝 docs: update API documentation #789`
+- `♻️ refactor(utils): optimize date formatting functions #101`
+
+## Best Practices:
+- Keep commits atomic and focused
+- Use imperative mood ("Add feature" not "Added feature")
+- Explain why, not just what
+- **Recommend including Issue numbers**: for better tracking and management
+- Split unrelated changes into separate commits
+
+## Beginner Guide:
+- 🎯 **Learning Goal**: Develop standardized commit habits
+- 📚 **Focus Point**: Understand when to use each commit type
+- 🔍 **Key Attention**: Commit messages should clearly describe the purpose of changes
+- 💡 **Advanced Tips**: Learn to use scope for more precise commits

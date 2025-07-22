@@ -9,6 +9,20 @@
 ### Added (新增)
 - 待添加功能
 
+## [3.0.2] - 2025-07-22
+
+### Changed (变更)
+- 🌍 **国际化重构完成** - 从中文版project-rules-cn升级为标准英文版project-rules
+- 📋 **提升执行准确性** - 英文版指令提高Claude Code执行精确度
+- 🔄 **路径引用更新** - CLAUDE.md和templates/CLAUDE.md统一引用@project-rules
+- 📁 **目录结构优化** - project-rules-cn备份为project-rules-cn-backup
+- 🔧 **核心脚本路径修复** - init-project-simple.sh、ai-analyzer.js、templates/文件全面更新
+
+### Fixed (修复)
+- ✅ **命令执行优化** - 英文版/commit、/push、/commit-fast命令执行更准确
+- 🔧 **标准化兼容** - 与Agent Rules原版保持同步，便于维护更新
+- 🛠️ **脚本路径一致性** - 所有文件引用统一指向新的project-rules/目录
+
 ## [3.0.1] - 2025-07-22
 
 ### Fixed (修复)

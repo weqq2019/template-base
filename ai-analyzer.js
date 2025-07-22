@@ -398,7 +398,7 @@ ${analysis.suggestedName}/
 │       └── todo.md                  # 开发任务清单
 │
 ├── 🛠️ 开发规范
-│   └── project-rules-cn/           # Git提交规范
+│   └── project-rules/              # Git提交规范
 │
 ${this.generateProjectSpecificStructure(analysis)}
 └── 📦 版本控制

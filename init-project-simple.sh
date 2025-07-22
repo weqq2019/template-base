@@ -76,7 +76,7 @@ copy_template_files() {
     
     # 复制目录
     cp -r templates/doc/ "$TARGET_DIR/"
-    cp -r project-rules-cn/ "$TARGET_DIR/"
+    cp -r project-rules/ "$TARGET_DIR/"
     
     # 删除项目中不需要的模板说明文件
     rm -f "$TARGET_DIR/doc/Claude Code智能项目创建完整流程.md"

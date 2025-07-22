@@ -275,7 +275,7 @@ Claude Code 在执行以下操作时，**必须立即更新 `structure.md` 文�
 - 🎯 开发进度和项目状态  
 - 📖 版本历史摘要（引用 CHANGELOG.md）
 
-详细的变更记录请使用 `@project-rules-cn/changelog.mdc` 维护 CHANGELOG.md。
+详细的变更记录请使用 `@project-rules/changelog.mdc` 维护 CHANGELOG.md。
 
 ### 🚨 structure.md 执行规则
 
@@ -335,11 +335,11 @@ Claude Code 在以下情况时，**考虑更新 `README.md` 文件**：
 
 # 🚀 Git 自动化工作流
 
-> 基于 `@project-rules-cn/commit.mdc` 规则的标准化Git工作流程
+> 基于 `@project-rules/commit.mdc` 规则的标准化Git工作流程
 
 ## 核心提交规则
 
-使用 `@project-rules-cn/commit.mdc` 的标准化提交流程：
+使用 `@project-rules/commit.mdc` 的标准化提交流程：
 - 自动预检查 (lint/build/docs)
 - Conventional commits 格式
 - 完整的 emoji 类型映射 (28 种)
@@ -404,9 +404,9 @@ git remote -v
 
 ### 🚀 可用命令
 
-- **`/commit`** - 执行标准提交流程 (参考: `@project-rules-cn/commit.mdc`)
-- **`/commit-fast`** - 执行快速提交流程 (参考: `@project-rules-cn/commit-fast.mdc`)  
-- **`/push`** - 执行一键推送工作流 (参考: `@project-rules-cn/push.mdc`)
+- **`/commit`** - 执行标准提交流程 (参考: `@project-rules/commit.mdc`)
+- **`/commit-fast`** - 执行快速提交流程 (参考: `@project-rules/commit-fast.mdc`)  
+- **`/push`** - 执行一键推送工作流 (参考: `@project-rules/push.mdc`)
 
 ### 📝 示例用法
 
@@ -453,7 +453,7 @@ Claude 执行流程：
 - 生成标准格式提交信息
 
 ### 🚀 快速提交选项
-- 必要时可使用 `/commit-fast` 进行快速提交 (参考: `@project-rules-cn/commit-fast.mdc`)
+- 必要时可使用 `/commit-fast` 进行快速提交 (参考: `@project-rules/commit-fast.mdc`)
 
 ---
 
@@ -473,7 +473,7 @@ Claude 执行流程：
 
 ### 📋 Agent Rules 项目
 - **GitHub**: [steipete/agent-rules](https://github.com/steipete/agent-rules)
-- **说明**: 本项目 `project-rules-cn/` 目录来源于 Agent Rules 项目
+- **说明**: 本项目 `project-rules/` 目录来源于 Agent Rules 项目
 - **价值**: 社区验证的 AI 助手开发工作流规则集合
 - **本地化**: 在原有基础上增加了中文版本和通用化配置
 
@@ -486,7 +486,7 @@ Claude 执行流程：
 - **格式标准**: 遵循 [Keep a Changelog](https://keepachangelog.com/) 规范
 - **更新时机**: 每次重要功能开发完成后更新
 - **分类方式**: Added/Changed/Deprecated/Removed/Fixed/Security
-- **维护工具**: 使用 `@project-rules-cn/changelog.mdc` 规则
+- **维护工具**: 使用 `@project-rules/changelog.mdc` 规则
 
 ### 📝 维护方式
 

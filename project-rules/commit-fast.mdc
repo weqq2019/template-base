@@ -1,0 +1,49 @@
+# Fast Commit Task
+
+Generate 3 commit message suggestions based on staged changes, then automatically use the first suggestion without user confirmation.
+
+Follows conventional commit format with appropriate emojis, creating descriptive messages that explain the purpose of changes. Skips manual message selection step to streamline commit process.
+
+## Execution Steps:
+1. Run `git status` to view staged changes
+2. Generate 3 commit message suggestions following conventional commit format
+3. If related Issue exists, auto-include number format: `type: description #issue-number`
+4. Auto-select the first suggestion
+5. Execute `git commit -m` with selected message
+6. Exclude Claude co-author information from commit
+
+## Commit Types:
+- ✨ feat: New features
+- 🐛 fix: Bug fixes
+- 📝 docs: Documentation changes
+- ♻️ refactor: Code refactoring
+- 🧑‍💻 chore: Tools and maintenance
+- 🎨 style: Code formatting, missing semicolons, etc.
+- ⚡️ perf: Performance improvements
+- ✅ test: Adding or fixing tests
+
+## Commit Message Examples:
+- `📝 docs: fix typo in README #101`
+- `🎨 style: format code with prettier #401`
+- `🐛 fix: resolve minor UI alignment issue #501`
+- `🔧 chore: update dev dependencies #401`
+- `✅ test: add unit test for utils #601`
+
+## Use Cases:
+- 📄 **Documentation Updates**: Minor documentation improvements and fixes
+- 🔧 **Configuration Adjustments**: Development tools and environment configuration
+- 🎨 **Style Optimization**: CSS, formatting, and other non-functional modifications
+- 🐛 **Minor Fixes**: Simple bug fixes
+- 🧪 **Experimental Code**: Prototype development and feature testing
+
+## Beginner Notes:
+- ⚠️ **Use with Caution**: Beginners should prioritize standard commit process for learning
+- 📚 **Learning Goal**: Understand when to use different commit types
+- 🎯 **Appropriate Timing**: Use when confident changes are simple and low-risk
+- 💡 **Growth Path**: Master standard workflow before using fast commit
+
+## Differences from Standard Commit:
+- ⚡ **Speed**: No confirmation required, direct execution
+- 🔍 **Checks**: Skip pre-check process
+- 🎯 **Applicable**: Small-scale, low-risk changes
+- 📈 **Learning**: Recommend beginners master standard process first

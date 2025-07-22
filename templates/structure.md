@@ -87,11 +87,12 @@
 │   └── deploy/                 # 部署脚本
 │
 └── 📝 项目规范
-    └── project-rules-cn/       # 中文开发规范
+    └── project-rules/          # 开发规范(英文版)
         ├── commit.mdc          # Git提交规范
         ├── push.mdc            # 一键推送规范
         ├── commit-fast.mdc     # 快速提交规范
-        └── changelog.mdc       # 变更日志规范
+        ├── changelog.mdc       # 变更日志规范
+        └── README.md           # 规范说明文档
 ```
 
 ---

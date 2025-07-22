@@ -147,7 +147,7 @@ cd /path/to/your-new-project
 ## 📝 开发规范
 
 ### Git工作流
-1. 遵循 [Angular Commit规范](./project-rules-cn/commit.mdc)
+1. 遵循 [Angular Commit规范](./project-rules/commit.mdc)
 2. 使用 `/commit` 或 `/push` 命令进行提交
 3. 提交格式：`<emoji> <type>(scope): <description> #issue-number`
 4. 保持提交原子化和描述清晰
@@ -178,7 +178,7 @@ cd /path/to/your-new-project
 
 ## 🔗 相关资源
 
-- 📖 **开发规范**: [project-rules-cn/](./project-rules-cn/)
+- 📖 **开发规范**: [project-rules/](./project-rules/)
 - 🛠️ **Claude Code**: [claude.ai/code](https://claude.ai/code)
 - 📚 **Agent Rules**: [steipete/agent-rules](https://github.com/steipete/agent-rules)
 - 🐛 **问题反馈**: 项目Issues页面

@@ -1,0 +1,81 @@
+# One-Click Push
+
+Execute complete Git workflow: auto-stage, commit, and push all changes to remote repository.
+
+## Features:
+- Auto-stage all uncommitted changes (`git add .`)
+- Generate conventional commit format with descriptive emojis
+- Auto-push to remote repository (`git push`)
+- Support issue number association
+- Perfect for rapid development and minor modifications
+
+## Usage:
+- `/push` - Execute complete workflow with issue number support
+
+## Execution Flow:
+1. Check working directory status (`git status`)
+2. Auto-stage all changes (`git add .`)
+3. Analyze changes and determine commit type
+4. Generate conventional commit format with descriptive emojis
+5. Execute commit (`git commit -m "message"`)
+6. Push to remote repository (`git push`)
+7. Display operation results
+8. Exclude Claude co-author information
+
+## Commit Message Format:
+```
+<emoji> <type>(<scope>): <description> #issue-number
+```
+
+### Format Examples:
+- `✨ feat(auth): add user registration system #301`
+- `🐛 fix(api): resolve data validation error #501`
+- `📝 docs(readme): update installation guide #101`
+- `🎨 style(ui): improve button hover effects #201`
+- `🔧 chore(deps): upgrade webpack to v5 #401`
+
+## Commit Types:
+- ✨ feat: New features
+- 🐛 fix: Bug fixes
+- 📝 docs: Documentation changes
+- ♻️ refactor: Code refactoring, no functionality change
+- 🎨 style: Code formatting, missing semicolons, etc.
+- ⚡️ perf: Performance improvements
+- ✅ test: Adding or fixing tests
+- 🧑‍💻 chore: Tools, configuration, maintenance
+- 🚧 wip: Work in progress
+- 🔥 remove: Remove code or files
+- 🚑 hotfix: Emergency fixes
+- 🔒 security: Security improvements
+
+## Use Cases:
+- 🚀 **Rapid Development**: Frequent minor changes and debugging
+- 📝 **Documentation Updates**: README, comments, documentation
+- 🐛 **Small Fixes**: Simple bug fixes
+- 🎨 **Style Adjustments**: CSS, formatting, non-logic modifications
+- 🔧 **Configuration Changes**: Development environment and tool configuration
+
+## Safety Checks:
+- Check remote repository connection status
+- Verify current branch push permissions
+- Avoid pushing files containing sensitive information
+- Auto-validate commit message format compliance
+
+## Command Comparison:
+
+| Command | Function | Check Level | Use Cases |
+|---------|----------|-------------|-----------|
+| `/commit` | Commit | Full pre-checks | Important feature development |
+| `/commit-fast` | Quick commit | Basic checks | Experimental modifications |
+| `/push` | One-click push | Medium checks | Daily development workflow |
+
+## Important Notes:
+- ⚠️ **Use with Caution**: Ensure changes have undergone basic testing
+- 📋 **Issue Association**: Always recommend including relevant issue numbers
+- 🔍 **Code Review**: Important features should use `/commit` for detailed checks first
+- 🌿 **Branch Management**: Confirm operating on correct branch
+
+## Beginner Tips:
+- 🎯 **Recommendation**: New users should master `/commit` workflow first
+- 📚 **Learning**: Understand the purpose and meaning of each step
+- ⚡ **Efficiency**: Use this command to improve development efficiency after proficiency

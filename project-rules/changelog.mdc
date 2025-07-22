@@ -1,0 +1,94 @@
+# Update Changelog
+
+Manually update the project's CHANGELOG.md file as a supplementary tool to Claude Code's automatic maintenance.
+
+> **Note**: CHANGELOG.md is typically maintained automatically by Claude Code. This command is mainly used for manual supplements or special version recording situations.
+
+## Usage:
+`/changelog <version> <change-type> <change-description>`
+
+## Parameter Description:
+- `<version>`: Version number (e.g., "1.1.0")
+- `<change-type>`: One of the following types:
+  - `added` - New features
+  - `changed` - Changes to existing functionality
+  - `deprecated` - Features to be removed soon
+  - `removed` - Deleted features
+  - `fixed` - Bug fixes
+  - `security` - Security fixes
+- `<change-description>`: Detailed description of the change
+
+## Usage Examples:
+- `/changelog 1.1.0 added "Add user authentication system (closes #301)"`
+- `/changelog 1.0.2 fixed "Fix login exception issue (fixes #501)"`
+- `/changelog 1.2.0 changed "Optimize API performance and response speed (improves #901)"`
+
+## Execution Flow:
+1. Check if CHANGELOG.md file exists, create if not
+2. Find or create section for specified version
+3. Add new entry under appropriate change type
+4. Format according to Keep a Changelog standard
+5. Write updated changelog back to file
+6. Optionally commit changes and generate appropriate commit message
+
+## Format Standards:
+Follows [Keep a Changelog](https://keepachangelog.com) format:
+
+### Standard Structure:
+```markdown
+# Changelog
+
+## [Version] - YYYY-MM-DD
+
+### Added
+- Add user authentication system (closes #301)
+- Add API interface documentation (closes #101)
+
+### Changed
+- Optimize database query performance (improves #901)
+- Update UI design standards (closes #201)
+
+### Deprecated
+- Legacy API endpoints will be removed in v3.0
+
+### Removed
+- Remove obsolete utility functions (closes #401)
+
+### Fixed
+- Fix login exception issue (fixes #501)
+- Resolve memory leak problem (fixes #502)
+
+### Security
+- Strengthen data encryption mechanism (closes #801)
+```
+
+## Best Practices:
+- **Group by Type**: Categorize changes into the 6 types above
+- **Entry Format**: Use bullet point lists
+- **Issue Association**: Recommend using `(closes #123)` format to associate related Issues
+- **Version Date**: Add release date to version sections
+- **Concise Description**: Keep entries concise but descriptive
+- **User Perspective**: Describe change impact from user perspective
+
+## Issue Association Formats:
+- `(closes #123)` - This change closes Issue #123
+- `(fixes #456)` - This change fixes Issue #456
+- `(improves #789)` - This change improves Issue #789
+- `(refs #101)` - This change references Issue #101
+
+## Git Workflow Integration:
+- Auto-generate commit messages conforming to project standards
+- Can be used together with `/commit` command
+- Support issue number association
+- Follow project's emoji commit standards
+
+## Use Cases:
+- 📝 **Manual Supplement**: Add important changes not automatically recorded by Claude Code
+- 🔧 **Special Situations**: Need immediate changelog update rather than waiting for automatic maintenance
+- 📋 **Version Organization**: Manually organize and refine change records before version release
+- 🎯 **Precise Control**: Need precise control over change description expression
+
+## Relationship with Automatic Maintenance:
+- **Primary Method**: Claude Code automatically updates based on Git commits and development progress
+- **Supplementary Tool**: `/changelog` command for manual supplements and special situations
+- **Best Practice**: Prioritize automatic maintenance, use manual command when necessary
