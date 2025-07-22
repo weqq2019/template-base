@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-07-22T01:50:26.070Z",
+  "project_name": "claude-project",
+  "project_info": {
+    "PROJECT_NAME": "claude-project",
+    "PROJECT_DESCRIPTION": "游戏类：俄罗斯方块 HTML5 个人",
+    "TECH_STACK": "Vue3",
+    "TECH_STACK_DETAIL": "基于Vue3的智能化开发",
+    "PROJECT_TYPE": "智能分析项目",
+    "TEAM_SIZE": "个人开发",
+    "CREATION_DATE": "2025-07-22",
+    "PROJECT_STATUS": "等待Claude Code深度分析"
+  },
+  "project_config": {
+    "name": "游戏类：俄罗斯方块 HTML5 个人 - 智能分析项目",
+    "description": "游戏类：俄罗斯方块 HTML5 个人",
+    "variables": {
+      "PROJECT_NAME": "claude-project",
+      "PROJECT_DESCRIPTION": "游戏类：俄罗斯方块 HTML5 个人",
+      "TECH_STACK": "Vue3",
+      "TECH_STACK_DETAIL": "基于Vue3的智能化开发",
+      "PROJECT_TYPE": "智能分析项目",
+      "TEAM_SIZE": "个人开发",
+      "CREATION_DATE": "2025-07-22",
+      "PROJECT_STATUS": "等待Claude Code深度分析"
+    },
+    "ai_analysis": {
+      "projectType": "智能分析中...",
+      "complexity": "分析中...",
+      "features": [
+        "待Claude Code分析"
+      ],
+      "recommendations": [
+        "启动Claude Code会话进行深度分析"
+      ],
+      "techStack": "Vue3",
+      "recommendedStack": "Vue3 前端应用",
+      "teamSize": "个人开发",
+      "originalDescription": "游戏类：俄罗斯方块 HTML5 个人",
+      "keywords": [
+        "游戏类：俄罗斯方块",
+        "html5",
+        "个人"
+      ],
+      "needsClaudeAnalysis": true
+    },
+    "intelligent_generation": true
+  },
+  "shell_variables": {
+    "PROJECT_NAME": "claude-project",
+    "PROJECT_DESCRIPTION": "游戏类：俄罗斯方块 HTML5 个人",
+    "TECH_STACK": "Vue3",
+    "TECH_STACK_DETAIL": "基于Vue3的智能化开发",
+    "PROJECT_TYPE": "智能分析项目",
+    "TEAM_SIZE": "个人开发",
+    "CREATION_DATE": "2025-07-22",
+    "PROJECT_STATUS": "等待Claude Code深度分析"
+  }
+}
